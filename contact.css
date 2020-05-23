@@ -1,0 +1,168 @@
+
+
+body {
+ background-image: url('https://files.otis.com/otis/en/tr/contentimages/burj-khalifa-night-two-1920x1080.jpg');
+  background-attachment: fixed;
+    background-size: cover;
+
+  height: 100%;
+  margin: 0; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+
+
+
+
+.navcontainer .navicon{
+	position: relative;
+	color: white;
+	font-size: 30px;
+	left: 42px;
+	top: 24px;
+	cursor: pointer;
+	z-index: 1;
+	border-style: solid;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.navmenucontainer{
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.95);
+	overflow: hidden;
+	transition: 1s ease-in-out;
+}
+
+.navmenucontent{
+	position:relative;
+	top: 25%;
+	width: 100%;
+	text-align:center;
+	background: rbga(0, 0, 0, 0.5);
+	margin-top: 30px;
+	
+}
+.navmenucontent a{
+	color: white;
+	padding: 16px;
+	text-decoration: none;
+	font-size: 18px;
+	display: block;
+	font-family: sans-serif;
+	transition: 0.3s ease-in-out;
+	
+}
+
+.navmenucontent a:hover{
+	background-color: rgba(255, 0, 0, 0.1);
+}
+
+.navmenucontainer .closebtn{
+		position: absolute;
+		top: 36px;
+		right: 48px;
+		font-size: 40px;
+		color: white;
+		z-index: 1;
+		cursor: pointer;
+}	
+
+.markp{
+	
+     text-align: center;
+	 padding-top: 200px;
+	 size: 3em;
+	 
+}
+
+h1, h2, h3 {
+color: white;
+  margin: 0;
+  font-weight: 400; }
+  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+    font-size: 4rem;
+	padding-top: 20px; }
+  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(46, 45, 43, 0.5);
+    border-radius: 0.5rem; }
+	
+
+
+#main-footer{
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: yellow;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.social-media img{
+	height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+.social-media img:hover{
+	height: 40px;
+	transition: 1s;
+}
+
+.boxes{
+	background: none;
+}
+.boxes div{
+	font-size: 2em;
+	color: white;
+	margin: 20px;
+	
+}
+.boxes div:hover{
+	background: rgba(0, 0, 0, 0.7);
+}
+@keyframes galaw {
+
+
+  from { transform: translate(500px, 0px);}
+  
+  to { transform: translate(0, 0);}
+}
+
+.email p{
+	animation-name: galaw;
+	animation-duration: 3s;
+	border: 1.5px solid;
+	border-color: yellow;
+}
+.phone p{
+	animation-name: galaw;
+	animation-duration: 4s;
+	border: 1.5px solid;
+	border-color: yellow;
+}
+.address p{
+	animation-name: galaw;
+	animation-duration: 5s;
+	border: 1.5px solid;
+	border-color: yellow;
+}
+
+ @media only screen and (max-width: 768px) {
+body {
+    background-image: url('mobilebackground.jpg');
+	background-attachment:fixed;
+	background-size: cover; }
+
+	.boxes div{
+	border: 1px solid;
+	font-size: 1.5em;
+	color: white;
+	margin: 20px;}
+	
+
+}
+	

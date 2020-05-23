@@ -1,0 +1,190 @@
+
+
+body {
+ background-image: url('https://files.otis.com/otis/en/tr/contentimages/burj-khalifa-night-two-1920x1080.jpg');
+  background-attachment: fixed;
+    background-size: cover;
+
+  height: 100%;
+  margin: 0; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+  
+
+ 
+
+
+
+
+.navcontainer .navicon{
+	position: relative;
+	color: white;
+	font-size: 30px;
+	left: 42px;
+	top: 24px;
+	cursor: pointer;
+	z-index: 1;
+	border-style: solid;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.navmenucontainer{
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.95);
+	overflow: hidden;
+	transition: 1s ease-in-out;
+}
+
+.navmenucontent{
+	position:relative;
+	top: 25%;
+	width: 100%;
+	text-align:center;
+	background: rbga(0, 0, 0, 0.5);
+	margin-top: 30px;
+	
+}
+.navmenucontent a{
+	color: white;
+	padding: 16px;
+	text-decoration: none;
+	font-size: 18px;
+	display: block;
+	font-family: sans-serif;
+	transition: 0.3s ease-in-out;
+	
+}
+
+.navmenucontent a:hover{
+	background-color: rgba(255, 0, 0, 0.3);
+}
+
+.navmenucontainer .closebtn{
+		position: absolute;
+		top: 36px;
+		right: 48px;
+		font-size: 40px;
+		color: white;
+		z-index: 1;
+		cursor: pointer;
+}	
+
+.markp{
+	
+     text-align: center;
+	 padding-top: 200px;
+	 size: 3em;
+	 
+}
+
+h1, h2, h3 {
+color: white;
+  margin: 0;
+  font-weight: 400; }
+  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+    font-size: 4rem;
+	padding-top: 20px; }
+  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(46, 45, 43, 0.5);
+    border-radius: 0.5rem; }
+	
+.text-secondary {
+  color: #FFFF00 }
+  
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'bioimage bio bio'
+ 'job1 job2 job3';
+  grid-template-columns: repeat(3, 1fr);
+  
+  }
+  
+ .about-info .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: #FFFF00 3px solid; 
+	width: 250px;
+	animation-name: rotating;
+	animation-duration: 3s;
+	}
+	
+@keyframes rotating {
+  0% { transform: rotate(30deg);}
+  50% { transform: rotate(-30deg);}
+  100% { transform: rotate(0deg);}
+}
+	
+.about-info .bio {
+    grid-area: bio;
+    font-size: 1.2rem;
+	color: white;
+	padding-right: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	line-height: 1.6;
+	padding-left: 5px;
+}
+
+.about-info .job-1 {
+    grid-area: job1; 
+	color: white;}
+.about-info .job-2 {
+    grid-area: job2;
+color: white;	}
+.about-info .job-3 {
+    grid-area: job3;
+color: white;	}
+ .about-info .job {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+    border-bottom: yellow 5px solid;
+    border-radius: 0.5rem; }
+
+.about-info h3{
+	color: yellow;
+}
+
+#main-footer{
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: yellow;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+.social-media img{
+	height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+.social-media img:hover{
+	height: 40px;
+	transition: 1s;
+}
+
+ @media only screen and (max-width: 768px) {
+
+ body {
+    background-image: url('mobilebackground.jpg');
+	background-attachment:fixed;
+	background-size: cover; }
+	
+.about-info {
+  display: block;
+  grid-gap: 30px;
+  grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+ 'job1 job2 job3';
+  grid-template-columns: repeat(1, 1fr); }
+
+ }
+	
+
+	

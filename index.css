@@ -1,0 +1,120 @@
+
+
+body {
+ background-image: url('https://files.otis.com/otis/en/tr/contentimages/burj-khalifa-night-two-1920x1080.jpg');
+  background-attachment: fixed;
+    background-size: cover;
+
+  height: 100%;
+  margin: 0; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+
+
+
+
+.navcontainer .navicon{
+	position: relative;
+	color: white;
+	font-size: 30px;
+	left: 42px;
+	top: 24px;
+	cursor: pointer;
+	z-index: 1;
+	border-style: solid;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.navmenucontainer{
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.9);
+	overflow: hidden;
+	transition: 1s ease-in-out;
+}
+
+.navmenucontent{
+	position:relative;
+	top: 25%;
+	width: 100%;
+	text-align:center;
+	background: rbga(0, 0, 0, 0.5);
+	margin-top: 30px;
+	
+}
+.navmenucontent a{
+	color: white;
+	padding: 16px;
+	text-decoration: none;
+	font-size: 18px;
+	display: block;
+	font-family: sans-serif;
+	transition: 0.3s ease-in-out;
+	
+}
+
+.navmenucontent a:hover{
+	background-color: rgba(255, 0, 0, 0.3);
+}
+
+.navmenucontainer .closebtn{
+		position: absolute;
+		top: 36px;
+		right: 48px;
+		font-size: 40px;
+		color: white;
+		z-index: 1;
+		cursor: pointer;
+}	
+
+.markp{
+	
+     text-align: center;
+	 padding-top: 140px;
+	 size: 3em;
+	 
+}
+
+h1 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 4em;
+  line-height: 0.6em;
+}
+
+h3 {
+  color: #fff;
+}
+#palma{
+	color: yellow;
+}
+hr{
+height: 3px;
+width: 350px;
+
+background-color: yellow;
+border-color: yellow;
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+ body {
+    background-image: url('mobilebackground.jpg');
+	background-attachment:fixed;
+	background-size: cover; }
+	
+	.about-info {
+  display: block;
+  grid-gap: 30px;
+  grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+ 'job1 job2 job3';
+  grid-template-columns: repeat(1, 1fr); }
+
+}
