@@ -71,6 +71,22 @@ body {
 		cursor: pointer;
 }	
 
+@keyframes name {
+
+
+  from { transform: translate(0px, -50px);}
+  
+  to { transform: translate(0, 0);}
+}
+
+@keyframes title {
+
+
+  from { transform: translate(0px, 50px);}
+  
+  to { transform: translate(0, 0);}
+}
+
 .markp{
 	
      text-align: center;
@@ -84,11 +100,16 @@ h1 {
   color: #fff;
   font-size: 4em;
   line-height: 0.6em;
+ animation-name: name;
+animation-duration: 4s;
 }
 
 h3 {
   color: #fff;
+animation-name: title;
+animation-duration: 4s;
 }
+
 #palma{
 	color: yellow;
 }
